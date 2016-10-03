@@ -1,0 +1,80 @@
+* {
+  margin: 0 auto;
+  list-style-type: none;
+  text-decoration: none; }
+
+.flexing, header ul, section, section .row .image, section .column ul {
+  display: flex;
+  justify-content: space-around; }
+
+header {
+  height: 70px;
+  background-color: deepskyblue; }
+  header ul {
+    height: 100%;
+    flex-direction: row;
+    align-items: center; }
+    header ul a {
+      padding: 1em;
+      color: white; }
+      header ul a:hover {
+        background: #00b7f5; }
+
+@media all and (max-width: 600px) {
+  ul {
+    flex-flow: column wrap;
+    padding: 0; }
+    ul a {
+      text-align: center;
+      padding: 10px; }
+    ul li:last-of-type a {
+      border-bottom: none; }
+
+  .image {
+    flex-flow: column wrap; } }
+section {
+  flex-direction: row; }
+  section .row {
+    padding: 20px;
+    width: 75%; }
+    section .row img {
+      max-width: 100%;
+      height: auto; }
+    section .row h1 {
+      font-weight: 700px;
+      text-align: center;
+      margin-top: 50px; }
+    section .row p {
+      margin: 25px; }
+    section .row .image {
+      flex-direction: row; }
+  section .column {
+    width: 25%;
+    background-color: #cce8f4; }
+    section .column ul {
+      position: fixed;
+      height: 65%;
+      flex-direction: column;
+      padding-left: 10%; }
+    section .column a {
+      color: black; }
+
+footer {
+  height: 100px;
+  background-color: #779db2;
+  padding: 20px;
+  text-align: center; }
+  footer .socials a {
+    width: 84px;
+    height: 84px;
+    display: inline-block; }
+  footer .socials .facebook {
+    background: url(../images/socials.png) no-repeat 0px -84px; }
+  footer .socials .dribble {
+    background: url(../images/socials.png) no-repeat -168px -84px; }
+  footer .socials .google {
+    background: url(../images/socials.png) no-repeat -252px -84px; }
+  footer .socials .pinterest {
+    background: url(../images/socials.png) no-repeat -420px -84px; }
+
+/*# sourceMappingURL=style.css.map */
